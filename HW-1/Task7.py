@@ -9,7 +9,7 @@ if len1 >= len2 + len3 or len2 >= len1 + len3 or len3 >= len1 + len2:
     print('Треугольника с такими сторонами быть не может')
 elif len1 == len2 and len2 == len3:
     print('Это равносторонний треугольник')
-elif len1 == len2 or len2 == len3:
+elif len1 == len2 or len2 == len3 or len1 == len3:
     print('Это равнобедренный треугольник')
 else:
     print('Это разносторонний треугольник')
