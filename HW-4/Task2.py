@@ -44,7 +44,7 @@ def erato_simple_find(n):
         return 2
     if n == 2:
         return 3
-    num = int(n * math.log(n) * 1.2)
+    num = int(n * math.log(n) * 1.3)
     mas = [i for i in range(num)]
 
     for i in range(2, num):
@@ -54,6 +54,6 @@ def erato_simple_find(n):
                 mas[j] = 0
                 j += i
     result = [i for i in mas if i != 0]
-    return result[n-1]
+    return result
 
-#print(erato_simple_find(1000))
+print(erato_simple_find(3))
